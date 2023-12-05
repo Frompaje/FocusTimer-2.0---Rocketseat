@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    /* colors Geral */
+    --txtcolor: hsla(0, 0%, 100%, 1);
+    --buttoncolor: hsla(0, 0%, 100%, 1);
+    /* colosBG Tree */
+    --treeBgcolor: hsla(112, 65%, 80%, 1);
+    --treeHoverButton: hsla(112, 65%, 80%, 1);
+    /* colosBG Rains */
+    --rainBgcolor: hsla(194, 90%, 75%, 1);
+    /* colorBG Stoneshop */
+    --stoneShopBgcolor: hsla(61, 90%, 75%, 1);
+    /* colorBG Fire */
+    --fireBgcolor: hsla(0, 90%, 75%, 1);
+}
+
+
+.container-app {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 192px;
+}
+
+.container-time span {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box-controls {
+    text-align: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.container-buttonTime button {
+    background-color: transparent;
+    font-size: 50px;
+}
+
+.container-buttonBg button {
+    padding: 24px;
+    font-size: 50px;
+    border-radius: 24px;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-left: 32px;
+
+}
+
+
+
+
+/* hidden tambem do button control BG-Sound / 
+   trade start for pause                  */
+.hidden {
+    display: none;
+}
+
+
+
+/* hover */
+#btn-tree:hover {
+    background-color: var(--treeHoverButton);
+    color: var(--buttoncolor);
+    transition: 0.3s;
+}
+
+#btn-cloudRain:hover {
+    background-color: var(--rainBgcolor);
+    color: var(--buttoncolor);
+    transition: 0.3s;
+}
+
+#btn-stoneShop:hover {
+    background-color: var(--stoneShopBgcolor);
+    color: var(--buttoncolor);
+    transition: 0.3s;
+}
+
+#btn-fire:hover {
+    background-color: var(--fireBgcolor);
+    color: var(--buttoncolor);
+    transition: 0.3s;
+}
+
+.container-buttonBg button:hover {
+
+    transform: scale(1.1);
+}
+
+
+/* transition color (classlist.add)*/
+.container-app.tree,
+.container-time.tree,
+.container-buttonTime.tree i {
+
+    color: #ffff;
+    background-color: var(--treeHoverButton);
+
+
+}
+
+.container-app.rain,
+.container-time.rain,
+.container-buttonTime.rain i {
+    color: #ffff;
+
+    background-color: var(--rainBgcolor);
+}
+
+.container-app.shop,
+.container-time.shop,
+.container-buttonTime.shop i {
+    color: #ffff;
+    background-color: var(--stoneShopBgcolor);
+}
+
+.container-app.fire,
+.container-time.fire,
+.container-buttonTime.fire i {
+    color: #ffff;
+    background-color: var(--fireBgcolor);
+
+}

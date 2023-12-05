@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bibiotecas de icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FocusTIMER | Rocketseat</title>
+</head>
+
+<body>
+    <div class="container-app ">
+        <div class="box-controls">
+            <div class="container-time  ">
+                <span id="minutos">50</span>
+
+                <span>:</span>
+                <span id="segundos">00</span>
+            </div>
+
+            <div class="container-buttonTime ">
+                <button>
+                    <i data-action="toggleRunning" class="start ph ph-play-circle "></i>
+                </button><button>
+                    <i data-action="toggleRunning" class="pause ph ph-pause-circle hidden"></i>
+                </button>
+                <button><i data-action="reset" class="ph ph-stop-circle"></i>
+                </button>
+                <button class="plusButton">
+                    <i data-action="plus" class="ph ph-plus-circle"></i>
+                </button>
+                <button>
+                    <i data-action="minus" class="ph ph-minus-circle"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="container-buttonBg ">
+            <div class="tree-rain">
+                <button id="btn-tree">
+                    <i id="icon-leaveTree" class="ph ph-sign-out hidden"></i>
+                    <i id="icon-tree" class="ph ph-tree"></i>
+                </button>
+
+                <button id="btn-cloudRain">
+                    <i id="icon-leaveRain" class="ph ph-sign-out hidden"></i>
+                    <i id="icon-rain" class="ph ph-cloud-snow"></i>
+                </button>
+            </div>
+
+            <div class="shop-fire">
+                <button id="btn-stoneShop">
+                    <i id="icon-shop" class="ph ph-storefront"></i>
+                    <i id="icon-leaveShop" class="ph ph-sign-out hidden"></i>
+                </button>
+                <button id="btn-fire">
+                    <i id="icon-fire" class="ph ph-flame"></i>
+                    <i id="icon-leaveFire" class="ph ph-sign-out hidden"></i>
+                </button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
